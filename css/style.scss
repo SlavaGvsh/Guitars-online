@@ -10,13 +10,37 @@ body{
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  //color: rgba(18, 18, 18, 0.4);
+  color: #121212;
 }
 h1{
   font-family: 'CalSans-SemiBold';
   font-size: 56px;
   line-height: 67px;
   margin-bottom: 20px;
+
 }
+h2{
+  font-family: 'CalSans-SemiBold';
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 53px;
+
+}
+h3{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.08em;
+  color: #121212;
+
+}
+a{
+  color: rgba(18, 18, 18, 0.4);
+  text-decoration: none;
+}
+//<-------------------------------------------->
 .navbar-brand{
   font-family: 'CalSans-SemiBold';
   font-size: 24px;
@@ -42,10 +66,22 @@ h1{
 .btn-bg{
   background-color: #FF6428;
 }
+//<-------------------------------------------->
+.store {
+  p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+      }
+  .price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666666;
+  }
+}
 
-
-
-
+//<-------------------------------------------->
 /* media queries */
 
 @media(max-width: 1199px){
@@ -59,16 +95,30 @@ h1{
     font-size: 30px;
     line-height: 40px;
   }
+  h2{
+    font-size: 25px;
+  }
+  h3{
+    font-size: 14px;
+  }
+}
   .navbar{
     margin-bottom: 30px;
   }
   .container-fluid{
     padding-right: 0;
   }
+  .store {
+    p{
+      font-size: 12px;
+    }
 
 }
 @media(max-width: 767px){
   .header{
+    text-align: center;
+  }
+  .store{
     text-align: center;
   }
 }
