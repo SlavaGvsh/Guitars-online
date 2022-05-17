@@ -61,7 +61,7 @@ a{
   line-height: 24px;
 }
 .color-or{
-  color: #FF6428;
+  color: #FF6428!important;
 }
 .btn-bg{
   background-color: #FF6428;
@@ -81,7 +81,53 @@ a{
   }
 }
 //<-------------------------------------------->
+.why{
+  background-color: #121212;
+  h2{
+    color: #fff;
+  }
+  .why-link{
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 20px;
+    background-color: #262626;
+    font-size: 0;
+    text-align: center;
+    margin: 0 auto 40px;
 
+    &:before{
+      content: "";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .why-icons1,
+    .why-icons2,
+    .why-icons3{
+      display: inline-block;
+      vertical-align: middle;
+      width: 32px;
+      height: 32px;
+    }
+    .why-icons1{
+      background: url(../img/why/icons-01.png) 0 0 no-repeat;
+    }
+    .why-icons2{
+      background: url(../img/why/icons-02.png) 0 0 no-repeat;
+    }
+    .why-icons3{
+      background: url(../img/why/icons-03.png) 0 0 no-repeat;
+    }
+  }
+  h3{
+    color: #fff;
+    margin-bottom: 12px;
+  }
+  span{
+    color: #666;
+  }
+}
 //<-------------------------------------------->
 /* media queries */
 
