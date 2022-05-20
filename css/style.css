@@ -12,6 +12,14 @@ body {
   color: #121212;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
 h1 {
   font-family: "CalSans-SemiBold", sans-serif;
   font-size: 56px;
@@ -38,6 +46,15 @@ h3 {
 a {
   color: rgba(18, 18, 18, 0.4);
   text-decoration: none;
+}
+a:hover {
+  opacity: 0.7;
+  color: rgba(18, 18, 18, 0.4);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .navbar-brand {
@@ -239,6 +256,68 @@ a {
   max-width: 100%;
 }
 
+.footer {
+  background-color: #eee;
+  padding: 80px 43px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+}
+.footer-logo {
+  margin-bottom: 28px;
+}
+.footer-info-item {
+  margin-bottom: 20px;
+}
+.footer-logo img {
+  margin-right: 20px;
+  vertical-align: text-bottom;
+}
+.footer .logo-text {
+  font-family: "CalSans-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #121212;
+}
+.footer .material-icons {
+  vertical-align: middle;
+  font-size: 20px;
+  color: #666666;
+  margin-right: 22px;
+}
+.footer-body {
+  display: flex;
+}
+.footer-list:not(:last-child) {
+  margin-right: 144px;
+}
+.footer-list a {
+  color: rgba(18, 18, 18, 0.6);
+}
+.footer-list a:not(:last-child) {
+  margin-right: 40px;
+}
+.footer-list i {
+  font-size: 20px;
+}
+.footer-list h5 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #121212;
+  margin-bottom: 20px;
+}
+.footer-list li:not(:last-child) {
+  margin-bottom: 16px;
+}
+.footer p {
+  color: rgba(18, 18, 18, 0.6);
+  font-size: 16px;
+  line-height: 160%;
+}
+
 /* media queries */
 @media (max-width: 1199px) {
   .navbar {
@@ -248,6 +327,14 @@ a {
   .browse-img-block:before {
     width: 478px;
     height: 267px;
+  }
+
+  .footer-list:not(:last-child) {
+    margin-right: 100px;
+  }
+
+  .footer-list a:not(:last-child) {
+    margin-right: 20px;
   }
 }
 @media (max-width: 992px) {
@@ -311,6 +398,14 @@ a {
     width: 568px;
     height: 354px;
   }
+
+  .footer-list:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .footer-list a:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 @media (max-width: 767px) {
   .header {
@@ -356,6 +451,21 @@ a {
   .browse-img-block {
     gap: 20px;
   }
+
+  .footer {
+    padding: 45px 15px;
+  }
+  .footer-body {
+    justify-content: space-between;
+  }
+  .footer-logo {
+    margin-bottom: 0;
+  }
+  .footer-info {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 29px;
+  }
 }
 @media (max-width: 600px) {
   .browse-img-block:before {
@@ -370,6 +480,20 @@ a {
 
   .carousel-item img {
     display: none;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-list:not(:last-child) {
+    margin-right: 0;
   }
 }
 
